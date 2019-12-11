@@ -134,7 +134,16 @@ function editar_perfil()
             return false;
         }
     }
+}
 
+function dame_result($query)
+{
+    try {
+        $conn = connection();
+        return $conn->query($query);
+    } catch (mysqli_sql_exception $e) {
+        throw $e;
+    }
 }
 
 /*
