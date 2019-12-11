@@ -84,16 +84,15 @@ function show_chats()
     conversacion INNER JOIN usuario ON usuario.telefono = conversacion.telefono";
 
     $result = dame_result($query);
-
-
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             echo '<h3><a href="index.php?cmd=ver_chat" class="btn">' . $row['nick'];
             if ($row['conectado'] == 0) {
-               echo' <img src="view/images/rojo.png" width=10 height=10 /></a></h3><br><div></div><br><br>';
-            }else {
-                echo' <img src="view/images/verde.png" width=10 height=10 /></a></h3><br><div></div><br><br>';
+                echo ' <img src="view/images/rojo.png" width=10 height=10 />';
+            } else {
+                echo ' <img src="view/images/verde.png" width=10 height=10 />';
             }
+            echo '</a></h3><br><div></div><br><br>';
         }
     } else {
         echo "0 results";
@@ -101,42 +100,7 @@ function show_chats()
     echo '</section>';
 }
 
-/*
-    echo '
 
-    <section id="chats">
-      <h3><a href="index.php?cmd=ver_chat" class="btn">Fulanito
-      <img src="view/images/verde.png" width=10 height=10 /></a></h3><br>
-      <div></div><br><br>
-
-      <h3><a href="index.php?cmd=ver_chat" class="btn">Menganito
-      <img src="view/images/rojo.png" width=10 height=10 /></a></h3><br>
-      <div></div><br><br>
-
-      <h3><a href="index.php?cmd=ver_chat" class="btn">Mariano
-      <img src="view/images/rojo.png" width=10 height=10 /></a></h3><br>
-      <div></div><br><br>
-
-      <h3><a href="index.php?cmd=ver_chat" class="btn">Sefora
-      <img src="view/images/verde.png" width=10 height=10 /></a></h3><br>
-      <div></div><br><br>
-
-      <h3><a href="index.php?cmd=ver_chat" class="btn">Romero
-      <img src="view/images/verde.png" width=10 height=10 /></a></h3><br>
-      <div></div><br><br>
-
-      <h3><a href="index.php?cmd=ver_chat" class="btn">Goku
-      <img src="view/images/verde.png" width=10 height=10 /></a></h3><br>
-      <div></div><br><br>
-
-      <h3><a href="index.php?cmd=ver_chat" class="btn">Vegeta
-      <img src="view/images/rojo.png" width=10 height=10 /></a></h3><br>
-      <div></div><br><br>
-    </section>
-
-
-';
-}*/
 /*
 *	Muestra un mensaje de tipo alert
 *	E: $msg (mensaje que se quiere mostrar en alert)
