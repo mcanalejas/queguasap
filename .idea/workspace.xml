@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="304f7867-97c2-48f9-87cd-7b7589bcef4b" name="Default Changelist" comment="">
+    <list default="true" id="304f7867-97c2-48f9-87cd-7b7589bcef4b" name="Default Changelist" comment="Ver chats">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/show_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/show_view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
       <workItem from="1575534528287" duration="3853000" />
       <workItem from="1575967493918" duration="2189000" />
       <workItem from="1575980035491" duration="286000" />
-      <workItem from="1576049762692" duration="6893000" />
+      <workItem from="1576049762692" duration="7161000" />
     </task>
     <task id="LOCAL-00001" summary="Arreglando proyecto">
       <created>1576058300557</created>
@@ -72,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576058300557</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ver chats">
+      <created>1576058392484</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576058392484</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,7 +86,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Arreglando proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arreglando proyecto" />
+    <MESSAGE value="Ver chats" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver chats" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="215" width="800" height="673" key="#Inspections" timestamp="1576057015801">
@@ -95,14 +102,14 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="303" width="524" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1575535414873" />
-    <state x="539" y="151" width="899" height="800" key="CommitChangelistDialog2" timestamp="1576058300344">
+    <state x="540" y="152" width="899" height="800" key="CommitChangelistDialog2" timestamp="1576058607815">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="539" y="151" width="899" height="800" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1576058300344" />
-    <state x="588" y="289" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1576058307482">
+    <state x="540" y="152" width="899" height="800" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1576058607815" />
+    <state x="588" y="289" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1576058395754">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="289" width="800" height="524" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1576058307482" />
+    <state x="588" y="289" width="800" height="524" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1576058395754" />
     <state x="549" y="302" width="733" height="520" key="find.popup" timestamp="1576057042117">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
