@@ -1,8 +1,9 @@
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
 -- MySQL dump 10.13  Distrib 5.7.28, for Linux (x86_64)
 --
 -- Host: localhost    Database: queguasap
 -- ------------------------------------------------------
--- Server version	5.7.28-0ubuntu0.18.04.4
+-- Server version	5.7.28
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -34,7 +35,7 @@ CREATE TABLE `mensaje` (
   KEY `telReceptor` (`telReceptor`),
   CONSTRAINT `mensaje_ibfk_1` FOREIGN KEY (`telEmisor`) REFERENCES `usuario` (`telefono`),
   CONSTRAINT `mensaje_ibfk_2` FOREIGN KEY (`telReceptor`) REFERENCES `usuario` (`telefono`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,7 +44,7 @@ CREATE TABLE `mensaje` (
 
 LOCK TABLES `mensaje` WRITE;
 /*!40000 ALTER TABLE `mensaje` DISABLE KEYS */;
-INSERT INTO `mensaje` VALUES (1,'30-10-2019','Hola que tal?',NULL,600000000,600000001),(2,'30-10-2019','Bien y tu?',NULL,600000001,600000000),(3,'30-10-2019','Aqui estudiando',NULL,600000000,600000001);
+INSERT INTO `mensaje` VALUES (1,'30-10-2019','Hola que tal?',NULL,600000000,600000001),(2,'30-10-2019','Bien y tu?',NULL,600000001,600000000),(3,'30-10-2019','Aqui estudiando',NULL,600000000,600000001),(4,'31-10-2019','Hola!',NULL,600000002,600000000),(5,'31-10-2019','Hola, me aburro!',NULL,600000002,600000001);
 /*!40000 ALTER TABLE `mensaje` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -72,7 +73,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (600000000,'hol4','1','miguellogo.png','HALAA MADRID!','Migueel_DAM2',NULL),(600000001,'Clave_oo','1','jamezrinlogo.jpg','Hola a todos','Jaime_2DAM',NULL),(600000002,'contrasenia','0','pepelogo.jpg','Jugador profesional de tenis','RafaNadalESP',NULL);
+INSERT INTO `usuario` VALUES (600000000,'hol4','1','miguellogo.png','Hola mundo','Migueel',NULL),(600000001,'Clave_oo','0','jamezrinlogo.jpg','Hola a todos','Jaime_2DAM',NULL),(600000002,'contrasenia','0','pepelogo.jpg','Jugador profesional de tenis','RafaNadalESP',NULL);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -85,4 +86,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-11 11:02:57
+-- Dump completed on 2019-12-11 19:53:53

@@ -13,6 +13,7 @@ function show_content()
             show_loging();
         } else {
             switch ($_GET['cmd']) {
+                case 'logout':
                 case 'start':
                     show_loging();
                     break;
@@ -31,11 +32,6 @@ function show_content()
 
                 case 'ajustes':
                     show_ajustes();
-                    break;
-
-                case 'logout':
-                    show_loging();
-                    show_msg("Ha cerrado la sesión");
                     break;
 
                 default:
@@ -75,7 +71,7 @@ function show_content()
                 show_msg("Perfil editado");
                 show_chats();
             } else {
-                show_msg("Error al actualizar el perfil.");
+                show_msg("Error tamaño maximo de nick/estado superado.");
                 show_chats();
             }
         }

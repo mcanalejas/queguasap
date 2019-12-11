@@ -122,7 +122,8 @@ function guardar_mensaje()
 */
 function editar_perfil()
 {
-    if (strlen($_POST['nick']) > 20 || strlen($_POST['estado']) > 255) {
+    include 'configuration.inc.php';
+    if (strlen($_POST['nick']) > $TAM_NICK || strlen($_POST['estado']) > $TAM_ESTADO) {
         return false;
     } else {
         $conn = connection();
@@ -180,6 +181,4 @@ function backup_chat()
 {
     return true;
 }
-
-
 ?>
