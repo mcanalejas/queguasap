@@ -95,7 +95,7 @@ function show_chats()
             echo '</a></h3><br><div></div><br><br>';
         }
     } else {
-        echo "0 results";
+        echo "No hay ningun chat.";
     }
     echo '</section>';
 }
